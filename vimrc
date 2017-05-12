@@ -51,7 +51,7 @@ filetype plugin indent on    " required
 " " Put your non-Plugin stuff after this line
 
 
-" This is for starting NERDtree when vim is started
+" This is for starting NERDtree when vim is started in the current directory
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " This is for closing vim when a file is closed and nothing but NERDtree is open
