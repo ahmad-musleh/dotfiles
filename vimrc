@@ -32,8 +32,10 @@ Plugin 'garybernhardt/dotfiles'
 " " Plugin 'ascenator/L9', {'name': 'newL9'}
 "
 " " All of your Plugins must be added before the following line
+
 call vundle#end()            " required
-" filetype plugin indent on    " required
+filetype plugin indent on    " required
+
 " " To ignore plugin indent changes, instead use:
 " "filetype plugin on
 " "
@@ -48,9 +50,13 @@ call vundle#end()            " required
 " " see :h vundle for more details or wiki for FAQ
 " " Put your non-Plugin stuff after this line
 
+
+" This is for starting NERDtree when vim is started
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" This is for closing vim when a file is closed and nothing but NERDtree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" color scheme change and syntax
 syntax on
 colorscheme grb256 
 highlight Comment cterm=bold
