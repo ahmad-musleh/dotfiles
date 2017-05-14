@@ -13,7 +13,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'sentientmachine/Pretty-Vim-Python'
 Plugin 'garybernhardt/dotfiles'
 
-"
 " " The following are examples of different formats supported.
 " " Keep Plugin commands between vundle#begin/end.
 " " plugin on GitHub repo
