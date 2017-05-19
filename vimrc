@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sentientmachine/Pretty-Vim-Python'
 Plugin 'garybernhardt/dotfiles'
+Plugin 'davidhalter/jedi-vim'
 
 " " The following are examples of different formats supported.
 " " Keep Plugin commands between vundle#begin/end.
